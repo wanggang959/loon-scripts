@@ -1,0 +1,26 @@
+var body = $response.body;
+var obj = JSON.parse(body);
+
+
+
+
+obj.value =  {
+			"remainBatch": -100,
+			"batchCount": 1,
+			"recognizeTranslateAll": 1,
+			"translateCount": 3,
+			"remainPdfTranslateCount": 0,
+			"pdfTranslateCount": 0,
+			"remainNormal": -100,
+			"userId": 15868444,
+			"pdfCount": 0,
+			"remainPdfTransCount": 0,
+			"balanceCount": 0,
+			"shareCount": 3,
+			"remainTranslate": -100,
+			"remainShare": 3,
+			"normalCount": -100
+		};
+
+body = JSON.stringify(obj);
+$done( {body} );
